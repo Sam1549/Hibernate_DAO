@@ -1,17 +1,5 @@
-insert into customers (name, surname, age, phone_number)
-values ('Alexey', 'Frolov', 24, '79198151122');
-insert into customers (name, surname, age, phone_number)
-values ('Vanya', 'Ivanov', 29, '79198151199');
-insert into customers (name, surname, age, phone_number)
-values ('Nikita', 'Smirnov', 27, '79198151155');
-insert into customers (name, surname, age, phone_number)
-values ('Vova', 'Frolov', 30, '79194351122');
-
-insert into orders (date, customer_id, product_name, amount)
-VALUES ('2023-06-10', 1, 'Хлеб', 1);
-insert into orders (date, customer_id, product_name, amount)
-VALUES ('2023-06-08', 2, 'Пиво', 1);
-insert into orders (date, customer_id, product_name, amount)
-VALUES ('2023-06-10', 3, 'Пельмени', 1);
-insert into orders (date, customer_id, product_name, amount)
-VALUES ('2023-06-09', 4, 'Доширак', 1);
+insert into person (name, surname,age,phone_of_number,city_of_living) values ('Ivan','Morozov',25,'+79119129191','Moscow');
+insert into person (name,surname,age,phone_of_number,city_of_living) values ('Vova','Ivanov',28,'+79129159560','Tver');
+insert into person (name,surname,age,phone_of_number,city_of_living) values ('Vlad','Petrov',31,'+79149189392','Samara');
+insert into person (name,surname,age,phone_of_number,city_of_living) values ('Kirill','Semenov',23,'+78199219897','Rostov');
+insert into person (name,surname,age,phone_of_number,city_of_living) values ('Pavel','Smirnov',29,'+79109209091','Tomsk');
