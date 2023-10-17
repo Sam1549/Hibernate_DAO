@@ -21,12 +21,12 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public List<Person> getPersonsByAge(int age) {
-        return personsDAO.findPersonByPersonalDataAgeOrderByPersonalDataAsc(age);
+        return personsDAO.findPersonByPersonalDataAgeBeforeOrderByPersonalDataAge(age);
     }
 
     @Override
     public List<Optional<Person>> getPersonsByNameAndSurname(String name, String surname) {
-        return personsDAO.findPersonByPersonalData_NameAAndPersonalData_Surname(name, surname);
+        return personsDAO.findPersonByPersonalData_NameAndPersonalData_Surname(name, surname);
     }
 
     @Override
