@@ -18,4 +18,6 @@ public interface PersonService {
     void deletePerson(PersonalData personalData);
 
     Optional<Person> findById(PersonalData personalData);
+
+    Person getPersonByName(String name);
 }

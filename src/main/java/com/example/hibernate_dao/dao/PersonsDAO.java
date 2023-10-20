@@ -21,4 +21,6 @@ public interface PersonsDAO extends JpaRepository<Person, PersonalData> {
     @Query("select p from Person p where p.personalData.name = :name and p.personalData.surname = :surname")
     List<Optional<Person>> findPersonByPersonalData_NameAndPersonalData_Surname(@Param("name") String name, @Param("surname") String surname);
 
+    @Query("select p from Person p where p.personalData.name = :name")
+    Person getPersonByName(@Param("name") String name);
 }

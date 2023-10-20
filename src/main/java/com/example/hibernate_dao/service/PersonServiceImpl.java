@@ -43,4 +43,9 @@ public class PersonServiceImpl implements PersonService {
     public Optional<Person> findById(PersonalData personalData) {
         return personsDAO.findById(personalData);
     }
+
+    @Override
+    public Person getPersonByName(String name) {
+        return personsDAO.getPersonByName(name);
+    }
 }
